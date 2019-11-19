@@ -1,0 +1,118 @@
+
+
+Using BFGS method to optimize GTR rate parameters, to disable this specify "--no-bfgs" 
+
+
+
+This is RAxML version 8.2.12 released by Alexandros Stamatakis on May 2018.
+
+With greatly appreciated code contributions by:
+Andre Aberer      (HITS)
+Simon Berger      (HITS)
+Alexey Kozlov     (HITS)
+Kassian Kobert    (HITS)
+David Dao         (KIT and HITS)
+Sarah Lutteropp   (KIT and HITS)
+Nick Pattengale   (Sandia)
+Wayne Pfeiffer    (SDSC)
+Akifumi S. Tanabe (NRIFS)
+Charlie Taylor    (UF)
+
+
+Alignment has 253 distinct alignment patterns
+
+Proportion of gaps and completely undetermined characters in this alignment: 6.61%
+
+RAxML rapid bootstrapping and subsequent ML search
+
+Using 1 distinct models/data partitions with joint branch length optimization
+
+
+
+Executing 2 rapid bootstrap inferences and thereafter a thorough ML search 
+
+All free model parameters will be estimated by RAxML
+GAMMA model of rate heterogeneity, ML estimate of alpha-parameter
+
+GAMMA Model parameters will be estimated up to an accuracy of 0.1000000000 Log Likelihood units
+
+Partition: 0
+Alignment Patterns: 253
+Name: No Name Provided
+DataType: DNA
+Substitution Matrix: GTR
+
+
+
+
+RAxML was called as follows:
+
+raxmlHPC-PTHREADS-AVX -T 8 -f a -m GTRGAMMA -p 618 -N 2 -x 309 -s Allbears.aln -n AllBears -w /project/inbre-train/inbre015/molb4485/deibert_Phylo/AllBears -o GiantPanda 
+
+
+
+Time for BS model parameter optimization 1.675812
+Bootstrap[0]: Time 7.551413 seconds, bootstrap likelihood -4051.680626, best rearrangement setting 6
+Bootstrap[1]: Time 0.050546 seconds, bootstrap likelihood -3970.568310, best rearrangement setting 5
+
+
+Overall Time for 2 Rapid Bootstraps 7.840285 seconds
+Average Time per Rapid Bootstrap 3.920142 seconds
+
+Starting ML Search ...
+
+Fast ML optimization finished
+
+Fast ML search Time: 0.152790 seconds
+
+Slow ML Search 0 Likelihood: -4014.885808
+Slow ML optimization finished
+
+Slow ML search Time: 0.075671 seconds
+Thorough ML search Time: 0.076136 seconds
+
+Final ML Optimization Likelihood: -4014.885812
+
+Model Information:
+
+Model Parameters of Partition 0, Name: No Name Provided, Type of Data: DNA
+alpha: 0.216448
+Tree-Length: 1.053615
+rate A <-> C: 23.510482
+rate A <-> G: 611.116741
+rate A <-> T: 13.937429
+rate C <-> G: 15.513557
+rate C <-> T: 632.029342
+rate G <-> T: 1.000000
+
+freq pi(A): 0.286091
+freq pi(C): 0.296199
+freq pi(G): 0.146402
+freq pi(T): 0.271308
+
+
+ML search took 0.306740 secs or 0.000085 hours
+
+Combined Bootstrap and ML search took 8.147125 secs or 0.002263 hours
+
+Drawing Bootstrap Support Values on best-scoring ML tree ...
+
+
+
+Found 1 tree in File /project/inbre-train/inbre015/molb4485/deibert_Phylo/AllBears/RAxML_bestTree.AllBears
+
+
+
+Found 1 tree in File /project/inbre-train/inbre015/molb4485/deibert_Phylo/AllBears/RAxML_bestTree.AllBears
+
+Program execution info written to /project/inbre-train/inbre015/molb4485/deibert_Phylo/AllBears/RAxML_info.AllBears
+All 2 bootstrapped trees written to: /project/inbre-train/inbre015/molb4485/deibert_Phylo/AllBears/RAxML_bootstrap.AllBears
+
+Best-scoring ML tree written to: /project/inbre-train/inbre015/molb4485/deibert_Phylo/AllBears/RAxML_bestTree.AllBears
+
+Best-scoring ML tree with support values written to: /project/inbre-train/inbre015/molb4485/deibert_Phylo/AllBears/RAxML_bipartitions.AllBears
+
+Best-scoring ML tree with support values as branch labels written to: /project/inbre-train/inbre015/molb4485/deibert_Phylo/AllBears/RAxML_bipartitionsBranchLabels.AllBears
+
+Overall execution time for full ML analysis: 8.150778 secs or 0.002264 hours or 0.000094 days
+
